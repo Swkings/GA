@@ -211,24 +211,29 @@ class GA:
 
 
 if __name__ == '__main__':
+
+	# 最优值：f(0,0,0) = 0
 	def objF1(param):
 		return param[0]**2 + param[1]**2 + param[2]**2
 	span1 = (-5.12, 5.12)
 	paraNum1 = 3
 	isMin1 = True
 
+	# 最优值：f(1, 1) = 0
 	def objF2(param):
 		return 100 * math.pow(math.pow(param[0], 2)-param[1], 2) + math.pow(1 - param[0], 2)
 	span2 = (-2.048, 2.048)
 	paraNum2 = 2
 	isMin2 = True
 
+	# 最优值：f(1.85) = 3.85~
 	def objF3(param):
 		return param[0]*math.sin(10*math.pi*param[0]) + 2.0
 	span3 = (-1, 2)
 	paraNum3 = 1
 	isMin3 = False
 
+	# 最优值：f(-0.0898,0.7126),f(0.0898,-0.7126) = -1.031628
 	def objF4(param):
 		return (4-2.1*math.pow(param[0], 2)+(math.pow(param[0], 4)/3))*math.pow(param[0], 2) + param[0]*param[1] + (-4+4*math.pow(param[1], 2))*math.pow(param[1], 2)
 	span4 = (-5, 5)
