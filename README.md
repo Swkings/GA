@@ -14,19 +14,9 @@
 
 这个过程将导致种群像自然进化一样的后生代种群比前代更加适应于环境，末代种群中的最优个体经过解码（decoding），可以作为问题近似最优解。
 # 遗传算法流程图
-```flow
-st=>operation: 编码
-op1=>operation: 初始化种群
-cond=>condition: bu满足终止条件?
-op2=>operation: 评价种群中个体适应度
-op3=>operation: 选择
-op4=>operation: 交叉
-op5=>operation: 变异
-e=>end: 得出局部最优解
-st->op1->cond
-cond(yes)->e
-cond(no)->op2->op3->op4->op5->cond
-```
+
+![GA](http://cdn.swking.cn/GA.svg)
+
 # 相关术语
     基因型(genotype)：性状染色体的内部表现；
 
